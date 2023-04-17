@@ -13,7 +13,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_token: ${{ secrets.GIT_TOKEN }}
           base: header, activity, community, repositories, metadata
           base_indepth: yes
           config_timezone: Africa/Johannesburg
@@ -29,7 +29,7 @@ jobs:
           plugin_languages_categories: programming
           plugin_languages_ignored: tsx, css
           plugin_languages_aliases: RenderScript:Rust # temp solution until Rust as RenderScript bug is fixed
-          commits_authoring: matievisthekat@gmail.com
+          commits_authoring: damelyas@gmail.com
           
           plugin_lines: yes
           
@@ -45,7 +45,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_token: ${{ secrets.GIT_TOKEN }}
           base: no
           config_timezone: Africa/Johannesburg
           config_padding: 20, 10
@@ -67,4 +67,4 @@ jobs:
           plugin_languages_categories: programming
           plugin_languages_ignored: tsx, css
           plugin_languages_aliases: RenderScript:Rust # temp solution until Rust as RenderScript bug is fixed
-          commits_authoring: matievisthekat@gmail.com
+          commits_authoring: damelyas@gmail.com
